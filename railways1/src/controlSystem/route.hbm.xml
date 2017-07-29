@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 Apr, 2017 1:28:49 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="controlSystem.route" table="ROUTE">
+        <id name="ID" type="java.lang.String" access="field">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="current" type="java.lang.String" access="field">
+            <column name="CURRENT" />
+        </property>
+        <property name="destination" type="java.lang.String" access="field">
+            <column name="DESTINATION" />
+        </property>
+        <property name="next" type="java.lang.String" access="field">
+            <column name="NEXT" />
+        </property>
+            </class>
+</hibernate-mapping>

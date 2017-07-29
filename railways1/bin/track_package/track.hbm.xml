@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Mar, 2017 12:44:29 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="track_package.track" table="TRACK">
+        <id name="trackID" type="java.lang.String" access="field">
+            <column name="TRACKID" />
+            <generator class="assigned" />
+        </id>
+        <property name="time" type="int" access="field">
+            <column name="TIME" />
+        </property>
+        <property name="trainId" type="java.lang.String" access="field">
+            <column name="TRAINID" />
+        </property>
+        <property name="end1" type="java.lang.String" access="field">
+            <column name="END1" />
+        </property>
+        <property name="end2" type="java.lang.String" access="field">
+            <column name="END2" />
+        </property>
+    </class>
+</hibernate-mapping>
